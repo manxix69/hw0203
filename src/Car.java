@@ -1,4 +1,4 @@
-public class Car extends Vehicle implements CheckableEngine {
+public class Car extends Vehicle  {
 
     public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
@@ -20,4 +20,8 @@ public class Car extends Vehicle implements CheckableEngine {
     }
 
 
+    @Override
+    public void check() {
+        System.out.println("Проверяем двигатель");
+    }
 }

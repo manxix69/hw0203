@@ -1,4 +1,4 @@
-public class Truck extends Vehicle implements CheckableEngine, CheckableTrailer {
+public class Truck extends Vehicle {
 
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
@@ -17,5 +17,11 @@ public class Truck extends Vehicle implements CheckableEngine, CheckableTrailer 
     @Override
     public void updateTyre() {
         super.updateTyre();
+    }
+
+    @Override
+    public void check() {
+        System.out.println("Проверяем двигатель");
+        System.out.println("Проверяем прицеп");
     }
 }

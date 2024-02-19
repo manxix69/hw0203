@@ -1,4 +1,4 @@
-public class Vehicle {
+public abstract class Vehicle implements Maintainable{
     private String modelName;
     private int wheelsCount;
 

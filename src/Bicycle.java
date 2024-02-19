@@ -18,4 +18,9 @@ public class Bicycle extends Vehicle {
     public void updateTyre() {
         super.updateTyre();
     }
+
+    @Override
+    public void check() {
+
+    }
 }
