@@ -1,13 +1,27 @@
-public class Car {
+public class Car extends Vehicle  {
 
-    public String modelName;
-    public int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public Car(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
     }
 
-    public void checkEngine() {
+    @Override
+    public String getModelName() {
+        return super.getModelName();
+    }
+
+    @Override
+    public int getWheelsCount() {
+        return super.getWheelsCount();
+    }
+
+    @Override
+    public void updateTyre() {
+        super.updateTyre();
+    }
+
+
+    @Override
+    public void check() {
         System.out.println("Проверяем двигатель");
     }
 }
